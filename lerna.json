@@ -1,18 +1,20 @@
 {
-  "version": "0.4.6",
-  "packages": [
-    "www/*",
-    "@narative/gatsby-theme-novela"
-  ],
+  "version": "0.4.7",
+  "useWorkspaces": true,
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "ignoreChanges": ["ignored-file", "*.md"],
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
       "message": "chore(release): publish %v"
     },
     "bootstrap": {
       "ignore": "component-*",
-      "npmClientArgs": ["--no-package-lock"]
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
     }
   }
 }
